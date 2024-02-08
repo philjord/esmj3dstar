@@ -43,7 +43,7 @@ public class J3dCellFactory extends J3dICellFactory
 	}
 
 	@Override
-	public BranchGroup makeLODLandscape(int lodX, int lodY, int scale, String lodWorldName)
+	public BranchGroup makeLODLandscape(int worldFormId, int lodX, int lodY, int scale, String lodWorldName)
 	{
 		return new Fo4LODLandscape(lodX, lodY, scale, lodWorldName, mediaSources.getMeshSource(), mediaSources.getTextureSource());
 	}
