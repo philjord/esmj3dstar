@@ -65,7 +65,7 @@ public class J3dREFRFactory
 		if (modl != null)
 		{
 			J3dRECODynInst j3dinst = new J3dRECODynInst(refr, true, makePhys);
-			j3dinst.setJ3dRECOType(new J3dRECOTypeDynamic(reco, modl.model.str, makePhys, mediaSources));
+			j3dinst.setJ3dRECOType(new J3dRECOTypeDynamic(reco, modl.model, makePhys, mediaSources));
 			return j3dinst;
 		}
 		else
@@ -80,7 +80,7 @@ public class J3dREFRFactory
 		if (modl != null)
 		{
 			J3dRECOStatInst j3dinst = new J3dRECOStatInst(refr, true, makePhys);
-			j3dinst.setJ3dRECOType(new J3dRECOTypeActionable(reco, modl.model.str, makePhys, mediaSources));
+			j3dinst.setJ3dRECOType(new J3dRECOTypeActionable(reco, modl.model, makePhys, mediaSources));
 			return j3dinst;
 		}
 		else
@@ -98,7 +98,7 @@ public class J3dREFRFactory
 			if ((!reco.isFlagSet(RECO.IsMarker_Flag) || BethRenderSettings.isShowEditorMarkers()))
 			{
 				J3dRECOStatInst j3dinst = new J3dRECOStatInst(refr, true, makePhys);
-				j3dinst.setJ3dRECOType(new J3dRECOTypeStatic(reco, modl.model.str, makePhys, mediaSources));
+				j3dinst.setJ3dRECOType(new J3dRECOTypeStatic(reco, modl.model, makePhys, mediaSources));
 				return j3dinst;
 			}
 		}
@@ -168,13 +168,13 @@ public class J3dREFRFactory
 			//SCOL are just exactly like STATS
 			SCOL scol = new SCOL(baseRecord);
 			J3dRECOStatInst j3dinst = new J3dRECOStatInst(refr, false, false);
-			j3dinst.addNodeChild(new J3dRECOTypeStatic(scol, scol.MODL.model.str, false, mediaSources));
+			j3dinst.addNodeChild(new J3dRECOTypeStatic(scol, scol.MODL.model, false, mediaSources));
 			return j3dinst;
 		}
 		else if (baseRecord.getRecordType().equals("TREE"))
 		{
 			TREE tree = new TREE(baseRecord);
-			String treeNif = tree.MODL.model.str;
+			String treeNif = tree.MODL.model;
 			Node node = TreeMaker.makeTreeFar(refr, false, mediaSources, treeNif, 0, 0);
 			return node;
 		}
@@ -217,7 +217,7 @@ public class J3dREFRFactory
 			//SCOL are just exactly like STATS
 			SCOL scol = new SCOL(baseRecord);
 			J3dRECOStatInst j3dinst = new J3dRECOStatInst(refr, false, false);
-			j3dinst.addNodeChild(new J3dRECOTypeStatic(scol, scol.MODL.model.str, false, mediaSources));
+			j3dinst.addNodeChild(new J3dRECOTypeStatic(scol, scol.MODL.model, false, mediaSources));
 			return j3dinst;
 		}
 		else if (baseRecord.getRecordType().equals("ACTI"))
@@ -350,7 +350,7 @@ public class J3dREFRFactory
 		else if (baseRecord.getRecordType().equals("TREE"))
 		{
 			TREE tree = new TREE(baseRecord);
-			String treeNif = tree.MODL.model.str;
+			String treeNif = tree.MODL.model;
 			J3dRECOStatInst j3dinst = TreeMaker.makeTree(refr, makePhys, mediaSources, treeNif, 0, 0, false);
 			return j3dinst;
 		}
