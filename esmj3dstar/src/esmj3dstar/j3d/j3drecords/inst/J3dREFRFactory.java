@@ -42,6 +42,8 @@ import esmj3dstar.data.records.LVLN;
 import esmj3dstar.data.records.MISC;
 import esmj3dstar.data.records.MSTT;
 import esmj3dstar.data.records.NPC_;
+import esmj3dstar.data.records.PDCL;
+import esmj3dstar.data.records.PKIN;
 import esmj3dstar.data.records.REFR;
 import esmj3dstar.data.records.SCOL;
 import esmj3dstar.data.records.SOUN;
@@ -177,6 +179,10 @@ public class J3dREFRFactory
 			String treeNif = tree.MODL.model;
 			Node node = TreeMaker.makeTreeFar(refr, false, mediaSources, treeNif, 0, 0);
 			return node;
+		}
+		else if (baseRecord.getRecordType().equals("LIGH"))
+		{
+			return new J3dRECOStatInst(refr, new J3dGeneralLIGH(new LIGH(baseRecord), false, mediaSources), true, false);
 		}
 		else
 		{
@@ -382,7 +388,18 @@ public class J3dREFRFactory
 			j3dinst.setJ3dRECOType(makeLVLI(lvli, master, mediaSources));
 			return j3dinst;
 		}
-
+		else if (baseRecord.getRecordType().equals("PDCL"))
+		{
+			PDCL pdcl = new PDCL(baseRecord);
+			//TODO: keywords as models, pointers to something?
+			//return new J3dRECOStatInst(refr, pdcl, pdcl.MODL, makePhys, mediaSources);
+		}		
+		else if (baseRecord.getRecordType().equals("PKIN"))
+		{
+			PKIN pkin = new PKIN(baseRecord);
+			//TODO: keywords as models, pointers to something?
+			//return new J3dRECOStatInst(refr, pkin, pkin.MODL, makePhys, mediaSources);
+		}
 		else
 		{
 			System.out.println("REFR record type not converted to j3d " + baseRecord.getRecordType());
