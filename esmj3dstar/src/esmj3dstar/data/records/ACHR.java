@@ -112,6 +112,9 @@ public class ACHR extends InstRECO
 			}else if (sr.getSubrecordType().equals("XLKT"))
 			{
 				//new
+			}else if (sr.getSubrecordType().equals("XALG"))
+			{
+				 
 			}			
 			else
 			{

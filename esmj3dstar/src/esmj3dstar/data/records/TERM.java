@@ -191,6 +191,54 @@ public class TERM extends RECO
 			}else if (sr.getSubrecordType().equals("NAM0"))
 			{
 
+			}else if (sr.getSubrecordType().equals("ODTY"))
+			{
+
+			}else if (sr.getSubrecordType().equals("BFCB"))
+			{
+
+			}else if (sr.getSubrecordType().equals("BNAM"))
+			{
+
+			}else if (sr.getSubrecordType().equals("CNAM"))
+			{
+
+			}else if (sr.getSubrecordType().equals("BFCE"))
+			{
+
+			}else if (sr.getSubrecordType().equals("REFL"))
+			{
+
+			}else if (sr.getSubrecordType().equals("NAM1"))
+			{
+
+			}else if (sr.getSubrecordType().equals("MOLM"))
+			{
+
+			}else if (sr.getSubrecordType().equals("FLLD"))
+			{
+
+			}else if (sr.getSubrecordType().equals("XFLG"))
+			{
+
+			}else if (sr.getSubrecordType().equals("JNAM"))
+			{
+
+			}else if (sr.getSubrecordType().equals("GNAM"))
+			{
+
+			}else if (sr.getSubrecordType().equals("FTMP"))
+			{
+
+			}else if (sr.getSubrecordType().equals("STOP"))
+			{
+
+			}else if (sr.getSubrecordType().equals("FTYP"))
+			{
+
+			}else if (sr.getSubrecordType().equals("PTT2"))
+			{
+
 			}
 			else
 			{

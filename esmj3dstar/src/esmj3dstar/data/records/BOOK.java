@@ -126,6 +126,39 @@ public class BOOK extends RECO
 			else if (sr.getSubrecordType().equals("FIMD"))
 			{
 				//new
+			}else if (sr.getSubrecordType().equals("ODTY"))
+			{
+				//new
+			}else if (sr.getSubrecordType().equals("PTT2"))
+			{
+				//new
+			}else if (sr.getSubrecordType().equals("XALG"))
+			{
+				//new
+			}else if (sr.getSubrecordType().equals("FLLD"))
+			{
+				 
+			}else if (sr.getSubrecordType().equals("BFCB"))
+			{
+				 
+			}else if (sr.getSubrecordType().equals("REFL"))
+			{
+				 
+			}else if (sr.getSubrecordType().equals("BFCE"))
+			{
+				 
+			}else if (sr.getSubrecordType().equals("PUSH"))
+			{
+				 
+			}else if (sr.getSubrecordType().equals("PDSH"))
+			{
+				 
+			}else if (sr.getSubrecordType().equals("FNAM"))
+			{
+				 
+			}else if (sr.getSubrecordType().equals("XFLG"))
+			{
+				 
 			}
 			else
 			{

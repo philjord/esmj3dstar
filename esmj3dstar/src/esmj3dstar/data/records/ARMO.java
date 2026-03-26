@@ -157,10 +157,14 @@ public class ARMO extends RECO
 			{
 				// new
 			}
-			else if (sr.getSubrecordType().equals("OBTF"))
-			{
-				// new
-			}
+			else if (sr.getSubrecordType().equals("OBTF")){}
+			else if (sr.getSubrecordType().equals("ODTY")){}
+			else if (sr.getSubrecordType().equals("PTT2")){}
+			else if (sr.getSubrecordType().equals("FLLD")){}
+			else if (sr.getSubrecordType().equals("BO64")){}
+			else if (sr.getSubrecordType().equals("DAMA")){}
+			else if (sr.getSubrecordType().equals("AFSG")){}
+
 			else
 			{
 				System.out.println("unhandled : " + sr.getSubrecordType() + " in record " + recordData + " in " + this);

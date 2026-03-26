@@ -64,8 +64,37 @@ public class LVLI extends RECO
 			else if (sr.getSubrecordType().equals("DATA"))
 			{
 
-			}
-			else
+			}else if (sr.getSubrecordType().equals("CTDA"))
+			{
+
+			}else if (sr.getSubrecordType().equals("FLLD"))
+			{
+
+			}else if (sr.getSubrecordType().equals("ODTY"))
+			{
+
+			}else if (sr.getSubrecordType().equals("LVLM"))
+			{
+
+			}else if (sr.getSubrecordType().equals("PTT2"))
+			{
+
+			}else if (sr.getSubrecordType().equals("OPDS"))
+			{
+
+			}else if (sr.getSubrecordType().equals("BFCB"))
+			{
+
+			}else if (sr.getSubrecordType().equals("BFCE"))
+			{
+
+			}else if (sr.getSubrecordType().equals("LLKC"))
+			{
+
+			}else if (sr.getSubrecordType().equals("MODL"))
+			{
+
+			}else
 			{
 				System.out.println("unhandled : " + sr.getSubrecordType() + " in record " + recordData + " in " + this);
 			}

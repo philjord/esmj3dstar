@@ -101,6 +101,60 @@ public class ALCH extends RECO
 			else if (sr.getSubrecordType().equals("CUSD"))
 			{
 				// new
+			}else if (sr.getSubrecordType().equals("ODTY"))
+			{
+
+			}else if (sr.getSubrecordType().equals("PTT2"))
+			{
+
+			}else if (sr.getSubrecordType().equals("FLLD"))
+			{
+
+			}else if (sr.getSubrecordType().equals("PUSH"))
+			{
+
+			}else if (sr.getSubrecordType().equals("PDSH"))
+			{
+
+			}else if (sr.getSubrecordType().equals("CUSH"))
+			{
+
+			}else if (sr.getSubrecordType().equals("EFIF"))
+			{
+
+			}else if (sr.getSubrecordType().equals("MUID"))
+			{
+
+			}else if (sr.getSubrecordType().equals("CVPA"))
+			{
+
+			}else if (sr.getSubrecordType().equals("MNAM"))
+			{
+
+			}else if (sr.getSubrecordType().equals("BFCE"))
+			{
+
+			}else if (sr.getSubrecordType().equals("REFL"))
+			{
+
+			}else if (sr.getSubrecordType().equals("BFCB"))
+			{
+
+			}else if (sr.getSubrecordType().equals("CDIX"))
+			{
+
+			}else if (sr.getSubrecordType().equals("CVPA"))
+			{
+
+			}else if (sr.getSubrecordType().equals("MOLM"))
+			{
+
+			}else if (sr.getSubrecordType().equals("XFLG"))
+			{
+
+			}else if (sr.getSubrecordType().equals("XALG"))
+			{
+
 			}
 			else
 			{

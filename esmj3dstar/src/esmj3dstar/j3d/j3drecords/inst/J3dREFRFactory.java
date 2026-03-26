@@ -400,6 +400,19 @@ public class J3dREFRFactory
 			//TODO: keywords as models, pointers to something?
 			//return new J3dRECOStatInst(refr, pkin, pkin.MODL, makePhys, mediaSources);
 		}
+		else if (baseRecord.getRecordType().equals("BMMO"))
+		{
+			//BMMO Biome Marker count=71
+		}
+		else if (baseRecord.getRecordType().equals("GBFM"))
+		{
+			//GBFM Ship Templates? count=3141 -complex
+		}else if (baseRecord.getRecordType().equals("AOPF"))
+		{
+			//AOPF Audio Occlusion Primative count=18
+		}	else if (baseRecord.getRecordType().equals("SECH"))
+		{ //SECH Marker? count=30 -complex
+		}	
 		else
 		{
 			System.out.println("REFR record type not converted to j3d " + baseRecord.getRecordType());
@@ -477,6 +490,19 @@ public class J3dREFRFactory
 			NPC_ npc_ = new NPC_(baseRecord);
 			return new J3dNPC_(npc_, master, mediaSources);
 		}
+		else if (baseRecord.getRecordType().equals("AMMO"))
+		{
+			//What hwo does this all work?
+		}	else if (baseRecord.getRecordType().equals("MISC"))
+		{ 
+		}else if (baseRecord.getRecordType().equals("ARMO"))
+		{ 
+		}else if (baseRecord.getRecordType().equals("ALCH"))
+		{ 
+		}else if (baseRecord.getRecordType().equals("WEAP"))
+		{ 
+		}
+		 
 		else
 		{
 			System.out.println("LVLI record type not converted to j3d " + baseRecord.getRecordType());
