@@ -159,6 +159,9 @@ public class BOOK extends RECO
 			}else if (sr.getSubrecordType().equals("XFLG"))
 			{
 				 
+			}else if (sr.getSubrecordType().equals("MOLM"))
+			{
+				 
 			}
 			else
 			{
